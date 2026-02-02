@@ -796,3 +796,100 @@ margin-bottom: 0px;
     right: 0px;
     box-shadow: 0px 0px 10px #00000015;
 }
+
+
+@media screen and (max-width: 1199px) {
+    .header-section .header-contant{
+        margin: 0px 0px 20px;
+        border-radius: 0px;
+        padding: 16px 16px;
+    }
+    main  .col-xl-3.pe-0,
+     main  .col-xl-3.ps-0{
+        padding: 0px 0px;
+    }
+    .row{
+            padding: 0px 8px;
+    }
+    .header-section .header-contant img.logo-image{
+        width: 45px;
+        height: 45px;
+    }
+    .header-section .header-contant .logo-container{
+        border-radius: 6px;
+        padding: 6px 6px;
+    }
+    .header-section .navigation-bar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden */
+  width: 250px;
+  height: 100%;
+  background: var(--primary-orange);
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  display: block !important;
+}
+.side-menu-active {
+  left: 0 !important;
+  z-index: 9;
+}
+.navigation-bar.side-menu-active .nav{
+    position: relative;
+}
+#close-btn-menu{
+    position: absolute;
+    top: -40px;
+    right: 10px;
+}
+.header-section .header-contant nav.nav ul{
+    flex-direction: column;
+    margin: 10px 16px;
+    width: 100%;
+    gap: 10px;
+}
+.header-section .header-contant nav.nav ul li{
+    width: 100%;
+}
+.seemore-btn{
+    background-color: transparent;
+    border: none;
+    padding: 15px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.drawer-popup{
+    height: 0px;
+    /* height: 0px; */
+    /* opacity: 0; */
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.drawer-popup.collapsed{
+  height: 920px;
+        /* height: 100%; */
+        /* opacity: 1 !important; */
+      /* height: 100%; */
+         display: block !important;
+}
+#mob-col-none{
+    display: none;
+}
+.mob-search-filter{
+    flex-direction: column;
+    gap: 15px;
+}
+.mob-search-filter button.post-btn{
+    width: 100%;
+}
+#mid-sec.col-xl-6{
+    padding: 0px 0px
+}
+.searchs{
+    width: 100%;
+    max-width: 100%;
+}
+}
