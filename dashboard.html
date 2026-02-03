@@ -104,6 +104,8 @@
     <main>
         <div class="row">
             <div class="col-xl-3 pe-0">
+                <a href="/company.html" class="d-block">
+
                     <div class="profile-card card mx-0 mt-0 mb-3">
                         <div class="card-body p-0 pb-3">
                             <div class="banner-container">
@@ -178,6 +180,7 @@
                         </div>
                     </div>
                    
+                </a>
                     <div id="drawer" class="drawer-popup">
 
                         <div class="p-3 module-container">
@@ -906,56 +909,6 @@
     </main>
 
 
+    <script src="/assets/scripts/script.js"></script>
 </body>
-<script>
-    const toggleBtn = document.getElementById("menuToggle");
-    const sideMenu = document.getElementById("navigation-bar");
-    const closeBtn = document.getElementById("close-btn-menu");
-
-
-
-    toggleBtn.addEventListener("click", () => {
-        sideMenu.classList.toggle("side-menu-active");
-       sideMenu.style.display ="block !important"
-    });
-
-    closeBtn.addEventListener("click", () => {
-            sideMenu.classList.toggle("side-menu-active");
-            sideMenu.style.display = "none !important"
-        });
-
-        
-        
-        const seemoreBtn = document.querySelector(".seemore-btn");
-        const drawerPopup = document.querySelector(".drawer-popup");
-        const seemoreTxt = document.querySelector(".see-more-text")
-        const  chevronDown = document.querySelector("#chevron-down");
-          const chevronUp = document.querySelector("#chevron-up");
-        seemoreBtn.addEventListener("click", () => {
-       drawerPopup.classList.toggle("collapsed");
-     if (drawerPopup.classList.contains("collapsed")) {
-                seemoreTxt.textContent = "See Less";
-
-                chevronDown.style.display = "none";
-                chevronUp.style.display = "block";
-                chevronUp.classList.add("d-block")
-            chevronUp.classList.remove("d-none")
-            } else {
-                seemoreTxt.textContent = "See More";
-
-                chevronDown.style.display = "block";
-                chevronUp.style.display = "none";
-                  chevronUp.classList.remove("d-block")
-         chevronUp.classList.add("d-none")
-            }
-        })
-        // drawerPopup.classList.toggle("collapsed");
-
-        // if (drawerPopup.classList.contains("collapsed")) {
-        //     seemoreBtn.textContent = "See More";
-        // } else {
-        //     seemoreBtn.textContent = "See Less";
-        // }
- 
-</script>
 </html>
