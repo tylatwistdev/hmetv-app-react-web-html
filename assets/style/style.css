@@ -1271,3 +1271,78 @@ margin-right: 0px !important;
 body.company-page{
     background: var(--card-bg);
 }
+
+body{
+    position: relative;
+}
+body header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.profile-page .social-media img{
+ width: 35px;
+}
+.profile-page{
+    background-color: var(--card-bg);
+}
+
+
+.followers-counts{
+    padding: 8px 16px;
+    width: 100%;
+    border: 1px solid var(--primary-orange);
+    box-shadow: 0px 0px 10px #00000010;
+    max-width: 588px;
+    font-size: 32px;
+    color: var(--border-color);
+    background-color: var(--white);
+    border-radius: 12px;
+    margin: 20px 0px 20px;
+}
+.followers-counts .follow-count{
+font-size: 18px;
+color: var(--primary-orange);
+font-weight: 700;
+}
+.followers-counts p{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.profile-page .follow-btn-containers{
+    max-width: 100%;
+}
+
+.profile-page .custom-tabs{
+    background-color: var(--primary-orange);
+    max-width: 650px;
+    justify-content: space-between;
+}
+.profile-page .custom-tabs .nav-link{
+    padding: 8px 36px
+}
+.custom-tabs .nav-link.active{
+    color: var(--primary-orange);
+}
+.info-content{
+    margin: 20px 0px 0px;
+}
+.info-content .contents:not(:last-child){
+    margin-bottom: 15px;
+}
+.info-content .contents img{
+width: 33px;
+}
+.info-content .contents span{
+    font-size: 18px;
+}
+.info-content .contents .headings{
+    color: var(--heading-color);
+    font-weight: 700;
+}
+.info-content .contents .para{
+color: var(--paragraph-color);
+}

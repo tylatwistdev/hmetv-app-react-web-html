@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+        integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Profile</title>
+</head>
+
+<body class="profile-page">
+    <header class="header-section">
+        <div class="container-fluid px-0">
+            <div class="d-flex align-items-center justify-content-between header-contant">
+
+                <div class="logo-container">
+                    <img src="/assets/images/logo.svg" alt="logo-image" class="logo-image">
+                </div>
+                <div class="navigation-bar" id="navigation-bar">
+                    <nav class="nav">
+                        <button id="close-btn-menu" class="primary-btn btn search-btn-header close-btn-menu d-xl-none">
+                            <i class="fa-solid fa-xmark text-danger"></i>
+                        </button>
+                        <ul class="">
+                            <li class="nav-item"><a href="#home" class="nav-link active-item"> <svg width="23"
+                                        height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="23" height="23" />
+                                        <path
+                                            d="M4.63365 11.4992H2.67188L11.4999 2.49316L20.3278 11.4992H18.3661M4.63365 11.4992V18.5039C4.63365 19.0347 4.84034 19.5437 5.20824 19.919C5.57614 20.2944 6.07513 20.5052 6.59542 20.5052H16.4043C16.9246 20.5052 17.4236 20.2944 17.7915 19.919C18.1594 19.5437 18.3661 19.0347 18.3661 18.5039V11.4992"
+                                            fill="#FF7A00" />
+                                        <path
+                                            d="M4.63365 11.4992H2.67188L11.4999 2.49316L20.3278 11.4992H18.3661V18.5039C18.3661 19.0347 18.1594 19.5437 17.7915 19.919C17.4236 20.2944 16.9246 20.5052 16.4043 20.5052H6.59542C6.07513 20.5052 5.57614 20.2944 5.20824 19.919C4.84034 19.5437 4.63365 19.0347 4.63365 18.5039V11.4992Z"
+                                            stroke="#FF7A00" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.55737 20.5054V14.5013C8.55737 13.9706 8.76406 13.4615 9.13196 13.0862C9.49987 12.7109 9.99885 12.5 10.5191 12.5H12.4809C13.0012 12.5 13.5002 12.7109 13.8681 13.0862C14.236 13.4615 14.4427 13.9706 14.4427 14.5013V20.5054"
+                                            fill="white" />
+                                        <path
+                                            d="M8.55737 20.5054V14.5013C8.55737 13.9706 8.76406 13.4615 9.13196 13.0862C9.49987 12.7109 9.99885 12.5 10.5191 12.5H12.4809C13.0012 12.5 13.5002 12.7109 13.8681 13.0862C14.236 13.4615 14.4427 13.9706 14.4427 14.5013V20.5054"
+                                            stroke="#FF7A00" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>Home</a></li>
+                            <li class="nav-item"><a href="#home" class="nav-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.5001 1.60156C6.54275 1.60156 0.684082 3.3349 0.684082 6.80156H6.09208C6.09208 3.3349 16.9081 3.3349 16.9081 6.80156H22.3161C22.3161 3.3349 16.4574 1.60156 11.5001 1.60156ZM8.00832 7.9941L6.43098 12.4869L3.50165 13.8961C3.19796 14.0424 2.94237 14.2668 2.76322 14.5443C2.58408 14.8218 2.48838 15.1416 2.48675 15.4682V20.6682C2.48675 21.5765 3.34482 22.4016 4.28942 22.4016H18.7107C19.6553 22.4016 20.5134 21.5765 20.5134 20.6682V15.4682C20.5116 15.1421 20.416 14.8228 20.2372 14.5456C20.0584 14.2685 19.8034 14.0443 19.5003 13.8978L16.5692 12.4886L14.9936 7.99236C14.8693 7.65323 14.6414 7.3581 14.3396 7.14562C14.0379 6.93314 13.6765 6.81322 13.3027 6.80156H9.69741C9.05386 6.7825 8.2643 7.22623 8.00832 7.9941ZM0.684082 8.5349C0.684082 9.49516 1.48807 10.2682 2.48675 10.2682H4.28942C5.28809 10.2682 6.09208 9.49516 6.09208 8.5349H0.684082ZM16.9081 8.5349C16.9081 9.49516 17.7121 10.2682 18.7107 10.2682H20.5134C21.5121 10.2682 22.3161 9.49516 22.3161 8.5349H16.9081ZM11.5001 12.0016C12.4563 12.0016 13.3733 12.3668 14.0494 13.0169C14.7256 13.6671 15.1054 14.5488 15.1054 15.4682C15.1054 16.3876 14.7256 17.2694 14.0494 17.9195C13.3733 18.5697 12.4563 18.9349 11.5001 18.9349C10.5439 18.9349 9.62686 18.5697 8.95073 17.9195C8.27459 17.2694 7.89475 16.3876 7.89475 15.4682C7.89475 14.5488 8.27459 13.6671 8.95073 13.0169C9.62686 12.3668 10.5439 12.0016 11.5001 12.0016Z"
+                                            fill="white" />
+                                    </svg>Calls</a></li>
+                            <li class="nav-item"><a href="#home" class="nav-link"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.71435 4.6152C7.71435 3.39118 8.16588 2.21728 8.96961 1.35176C9.77333 0.486243 10.8634 0 12.0001 0C13.1367 0 14.2268 0.486243 15.0305 1.35176C15.8342 2.21728 16.2857 3.39118 16.2857 4.6152C16.2857 5.83923 15.8342 7.01313 15.0305 7.87864C14.2268 8.74416 13.1367 9.23041 12.0001 9.23041C10.8634 9.23041 9.77333 8.74416 8.96961 7.87864C8.16588 7.01313 7.71435 5.83923 7.71435 4.6152ZM9.42863 11.0765C8.74665 11.0765 8.0926 11.3682 7.61037 11.8875C7.12813 12.4069 6.85722 13.1112 6.85722 13.8456V18.4608C6.85722 19.9296 7.39905 21.3383 8.36352 22.3769C9.32799 23.4156 10.6361 23.9991 12.0001 23.9991C13.364 23.9991 14.6721 23.4156 15.6366 22.3769C16.6011 21.3383 17.1429 19.9296 17.1429 18.4608V13.8456C17.1429 13.1112 16.872 12.4069 16.3897 11.8875C15.9075 11.3682 15.2535 11.0765 14.5715 11.0765H9.42863ZM5.23894 12.8672C5.17465 13.1887 5.14247 13.5167 5.14294 13.8456V18.4608C5.14277 19.4488 5.32672 20.4269 5.6839 21.3369C6.04108 22.247 6.56423 23.0707 7.22236 23.7591L7.05093 23.8108C5.73381 24.1903 4.33065 23.991 3.14993 23.2567C1.9692 22.5225 1.10755 21.3134 0.754384 19.8952L0.0875298 17.2184C0.000171028 16.8671 -0.0220793 16.5007 0.0220494 16.1402C0.0661781 15.7797 0.175821 15.432 0.344719 15.1171C0.513616 14.8022 0.738459 14.5262 1.00641 14.3049C1.27436 14.0835 1.58017 13.9212 1.90638 13.8271L5.23894 12.8672ZM16.776 23.7591C17.4345 23.0708 17.9579 22.2472 18.3154 21.3372C18.6729 20.4271 18.8571 19.449 18.8572 18.4608V13.8456C18.856 13.5084 18.824 13.1823 18.7612 12.8672L22.092 13.8271C22.4184 13.9212 22.7244 14.0836 22.9925 14.305C23.2606 14.5265 23.4855 14.8027 23.6544 15.1178C23.8233 15.4329 23.9329 15.7808 23.9769 16.1415C24.0209 16.5023 23.9985 16.8688 23.9109 17.2202L23.2457 19.8952C23.0671 20.6131 22.7561 21.285 22.3312 21.8708C21.9064 22.4565 21.3764 22.9442 20.7729 23.3047C20.1693 23.6653 19.5046 23.8913 18.8182 23.9694C18.1318 24.0474 17.4362 23.9759 16.776 23.7591ZM0.000101565 7.38433C0.000101565 6.4051 0.361324 5.46599 1.0043 4.77357C1.64728 4.08116 2.51935 3.69216 3.42866 3.69216C4.33797 3.69216 5.21004 4.08116 5.85301 4.77357C6.49599 5.46599 6.85722 6.4051 6.85722 7.38433C6.85722 8.36355 6.49599 9.30266 5.85301 9.99508C5.21004 10.6875 4.33797 11.0765 3.42866 11.0765C2.51935 11.0765 1.64728 10.6875 1.0043 9.99508C0.361324 9.30266 0.000101565 8.36355 0.000101565 7.38433ZM17.1429 7.38433C17.1429 6.4051 17.5041 5.46599 18.1471 4.77357C18.7901 4.08116 19.6621 3.69216 20.5714 3.69216C21.4808 3.69216 22.3528 4.08116 22.9958 4.77357C23.6388 5.46599 24 6.4051 24 7.38433C24 8.36355 23.6388 9.30266 22.9958 9.99508C22.3528 10.6875 21.4808 11.0765 20.5714 11.0765C19.6621 11.0765 18.7901 10.6875 18.1471 9.99508C17.5041 9.30266 17.1429 8.36355 17.1429 7.38433Z"
+                                            fill="white" />
+                                    </svg>Community</a></li>
+                            <li class="nav-item"><a href="#home" class="nav-link"> <svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.3999 5.99961C2.3999 5.36309 2.65276 4.75264 3.10285 4.30255C3.55293 3.85247 4.16338 3.59961 4.7999 3.59961H13.1999C13.8364 3.59961 14.4469 3.85247 14.897 4.30255C15.347 4.75264 15.5999 5.36309 15.5999 5.99961V10.7996C15.5999 11.4361 15.347 12.0466 14.897 12.4967C14.4469 12.9468 13.8364 13.1996 13.1999 13.1996H10.7999L7.1999 16.7996V13.1996H4.7999C4.16338 13.1996 3.55293 12.9468 3.10285 12.4967C2.65276 12.0466 2.3999 11.4361 2.3999 10.7996V5.99961Z"
+                                            fill="white" />
+                                        <path
+                                            d="M17.9999 8.39941V10.7994C17.9999 12.0725 17.4942 13.2934 16.594 14.1935C15.6939 15.0937 14.473 15.5994 13.1999 15.5994H11.7935L9.67432 17.7198C10.0103 17.8986 10.3931 17.9994 10.7999 17.9994H13.1999L16.7999 21.5994V17.9994H19.1999C19.8364 17.9994 20.4469 17.7466 20.897 17.2965C21.3471 16.8464 21.5999 16.2359 21.5999 15.5994V10.7994C21.5999 10.1629 21.3471 9.55244 20.897 9.10236C20.4469 8.65227 19.8364 8.39941 19.1999 8.39941H17.9999Z"
+                                            fill="white" />
+                                    </svg>Chats</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-nav">
+                    <button class="primary-btn btn search-btn-header">
+                        <i class='bx bx-search'></i>
+                    </button>
+                    <button class="primary-btn btn search-btn-header">
+                        <i class='bx bxs-bell'></i>
+                    </button>
+                    <button id="menuToggle" class="primary-btn btn search-btn-header  d-xl-none d-flex ">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <div class="dropdown d-flex align-items-center justify-content-center">
+                        <button class="dropdown-btn d-flex align-items-center justify-content-center gap-1">
+
+                            <img src="/assets/images/event.webp" alt="profile" class="profile-dropdown">
+                            <i class='bx bx-chevron-down'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div id="mid-sec" class="class col-xl-8">
+                    <a href="/business-profile" class="d-block">
+
+                        <div class="profile-card card mx-0 mt-0 mb-3 company-profile-card">
+                            <div class="card-body p-0 pb-3">
+                                <div class="banner-container company-banner">
+                                    <img src="/assets/images/banner.png" alt="">
+                                </div>
+                                <div class="d-flex align-items-center gap-3 px-3 profile-contents">
+                                    <div class="profile-photo company-photo">
+                                        <img src="/assets/images/logo.svg" alt="">
+                                    </div>
+                                    <div class="profile-content mb-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <h3 class="name">
+                                                Lisa Targaryen
+                                            </h3>
+                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.701 3.70409C15.4303 2.20245 17.5697 2.20245 18.299 3.70409L18.8044 4.74464C19.3001 5.76517 20.5445 6.1695 21.5453 5.63521L22.5658 5.09045C24.0385 4.30428 25.7693 5.5618 25.4767 7.20534L25.2739 8.34422C25.0751 9.46119 25.8442 10.5197 26.9679 10.6758L28.1137 10.8349C29.7672 11.0645 30.4283 13.0992 29.2256 14.2568L28.3921 15.059C27.5747 15.8458 27.5747 17.1542 28.3921 17.941L29.2256 18.7432C30.4283 19.9008 29.7672 21.9355 28.1137 22.1651L26.9679 22.3242C25.8442 22.4803 25.0751 23.5388 25.2739 24.6558L25.4767 25.7947C25.7693 27.4382 24.0385 28.6957 22.5658 27.9096L21.5453 27.3648C20.5445 26.8305 19.3001 27.2348 18.8044 28.2554L18.299 29.2959C17.5697 30.7975 15.4303 30.7975 14.701 29.2959L14.1956 28.2554C13.6999 27.2348 12.4555 26.8305 11.4547 27.3648L10.4342 27.9096C8.96152 28.6957 7.2307 27.4382 7.5233 25.7947L7.72606 24.6558C7.92492 23.5388 7.15585 22.4803 6.03209 22.3242L4.8863 22.1651C3.23278 21.9355 2.57167 19.9008 3.77443 18.7432L4.60788 17.941C5.4253 17.1542 5.4253 15.8458 4.60789 15.059L3.77444 14.2568C2.57167 13.0992 3.23278 11.0645 4.8863 10.8349L6.03209 10.6758C7.15584 10.5197 7.92492 9.46119 7.72606 8.34422L7.5233 7.20534C7.2307 5.5618 8.96152 4.30428 10.4342 5.09045L11.4547 5.63521C12.4555 6.1695 13.6999 5.76517 14.1956 4.74464L14.701 3.70409Z"
+                                                    fill="#17A6FF" />
+                                                <g clip-path="url(#clip0_2320_30)">
+                                                    <path
+                                                        d="M15.9583 18.625L23.0208 11.5625C23.1875 11.3958 23.3819 11.3125 23.6042 11.3125C23.8264 11.3125 24.0208 11.3958 24.1875 11.5625C24.3542 11.7292 24.4375 11.9272 24.4375 12.1567C24.4375 12.3861 24.3542 12.5839 24.1875 12.75L16.5417 20.4167C16.375 20.5833 16.1805 20.6667 15.9583 20.6667C15.7361 20.6667 15.5417 20.5833 15.375 20.4167L11.7917 16.8333C11.625 16.6667 11.545 16.4689 11.5517 16.24C11.5583 16.0111 11.6453 15.8131 11.8125 15.6458C11.9797 15.4786 12.1778 15.3953 12.4067 15.3958C12.6355 15.3964 12.8333 15.4797 13 15.6458L15.9583 18.625Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2320_30">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(3 6)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+
+                                        </div>
+                                        <div class="social-media d-flex align-items-center gap-3 mt-2">
+                                           <img src="/assets/images/facebook.png" alt="">
+                                            <img src="/assets/images/insta.png" alt="">
+                                            <img src="/assets/images/x-twitter.png" alt="">
+                                            <img src="/assets/images/youtube-icon.png" alt="">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between followers-counts">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="follow-count">
+                                            20k
+                                        </span>
+                                        <p class="para">
+                                            Post
+                                        </p>
+                                    </div>|
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="follow-count">
+                                            20k
+                                        </span>
+                                        <p class="para">
+                                            Followers
+                                        </p>
+                                    </div>|
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="follow-count">
+                                            20k
+                                        </span>
+                                        <p class="para">
+                                        Followings
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="gap-xl-4 d-flex align-items-center justify-content-between follow-btn-containers max-w-100">
+                                    <button class="btn btn-secondary justify-content-center align-items-center gap-2 w-100">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Add</span>
+                                    </button>
+                                    <button class="btn btn-outline justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                        <span>Follow</span>
+                                    </button>
+                                  
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+                    <ul class="nav custom-tabs" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#about" type="button">
+                                About
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#posts" type="button">
+                                News
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jobs" type="button">
+                            Gallery
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#applicants" type="button">
+                            Reels
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#events" type="button">
+                                Events
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="about">
+                            <div class="card mb-4 ">
+                                <div class="card-body">
+                                    <h3 class="title-heading">
+                                       Bio
+                                    </h3>
+                                    <p class="para">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy text ever since.
+                                        <br><br>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy text ever since.
+                                        <br><br>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard
+                                        dummy text ever since. Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been
+                                        the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since.
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since.
+                                    </p>
+                                    <h3 class="detail-heading">
+                                        Details
+                                    </h3>
+                                    <div class="info-content">
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/occupation.png" alt="">
+                                            <div >
+                                                <span class="headings">Occupation :</span>
+                                                <span class="para">Software Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/locations.png" alt="">
+                                            <div>
+                                                <span class="headings">Locations :</span>
+                                                <span class="para">456 Oak Ave Apt 101</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/male.png" alt="">
+                                            <div>
+                                                <span class="headings">Email :</span>
+                                                <span class="para">lisatargaryen@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/call.png" alt="">
+                                            <div>
+                                                <span class="headings">Phone :</span>
+                                                <span class="para">7656434233</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/gender.png" alt="">
+                                            <div>
+                                                <span class="headings">Gender :</span>
+                                                <span class="para">Male</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/calendars.png" alt="">
+                                            <div>
+                                                <span class="headings">Date of Birth :</span>
+                                                <span class="para">01-02-2026</span>
+                                            </div>
+                                        </div>
+                                        <div class="contents d-flex align-items-center gap-3">
+                                            <img src="/assets/images/category.png" alt="">
+                                            <div>
+                                                <span class="headings">Category :</span>
+                                                <span class="para">Busniess</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="tab-pane fade" id="posts">
+                            <div class="post-card card mx-0 mt-0 mb-3">
+                                <div class="card-body p-0">
+                                    <div class="img-container">
+                                        <div
+                                            class=" profile-container d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="/assets/images/profile.png" class="person-img" alt="">
+                                                <div class="content">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <h3 class="name">
+                                                            Lisa Targaryen
+                                                        </h3>
+                                                        <button class="btn btn-primary">
+                                                            Follow
+                                                        </button>
+                                                    </div>
+                                                    <p>
+                                                        <span>
+                                                            Date : 17-11-2025
+                                                        </span>
+                                                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="2" cy="2" r="2" fill="white"
+                                                                fill-opacity="0.79" />
+                                                        </svg>
+                                                        <span>
+                                                            Time : 10:00 AM
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <button class="btn icon-btn">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                        <img src="/assets/images/event.webp" class="post-img" alt="">
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-heading">
+                                            Post Title
+                                        </h3>
+                                        <p class="post-para">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nam
+                                                voluptates maxime impedit
+                                                maiores unde iste voluptas error fugiat molestiae, quaerat delectus
+                                                suscipit dignissimos?
+                                                Perspiciatis possimus a rerum quidem cupiditate laborum alias asperiores
+                                                optio! Perferendis
+                                                praesentium rem id assumenda, sunt, fuga ullam velit numquam quia
+                                                aliquam dicta officiis aperiam
+                                                saepe et temporibus? Vero id dolorum minus voluptate, possimus labore
+                                                veritatis alias natus
+                                                repellendus totam animi quas porro quam iste necessitatibus placeat
+                                                assumenda adipisci dolores
+                                                doloribus sequi ipsum repudiandae perspiciatis? Vel perspiciatis sed
+                                                dolorum voluptate ullam
+                                                temporibus eos, unde deserunt, dicta quis ad expedita magni quia, beatae
+                                                officiis! Corporis quam
+                                                provident doloremque ea suscipit eius, officiis dicta vitae magni
+                                                voluptatibus obcaecati nisi sint
+                                                nam in dolor accusantium iste repellat animi facere ipsam. </span>
+                                            <span class="read-more">Read More</span>
+                                            <span class="d-none">Veniam quas exercitationem nobis asperiores impedit
+                                                deserunt a fugit, sed hic, sint
+                                                necessitatibus magnam voluptas
+                                                aliquid quo. Iste, tempora voluptatibus quasi ducimus molestias tempore
+                                                reiciendis iusto
+                                                perspiciatis minima commodi,
+                                                praesentium sit dolores laboriosam, maxime eligendi dolore quisquam
+                                                nulla quidem quam reprehenderit
+                                                dolor officia cum?
+                                                Consequatur fuga veniam id necessitatibus soluta voluptas autem, facilis
+                                                beatae! Temporibus,
+                                                placeat. Illum, velit
+                                                accusantium? Tempore odit magni quas at modi repellat perferendis,
+                                                deserunt tempora quasi dolore
+                                                voluptatem itaque
+                                                corrupti fugit neque esse odio autem architecto adipisci dignissimos
+                                                sunt libero facere ullam ipsa
+                                                cum! Ratione sint
+                                                unde magnam, et quod, blanditiis eveniet, laborum libero animi
+                                                doloremque vitae nesciunt incidunt
+                                                cupiditate provident
+                                                dolorem! Obcaecati ex suscipit quis vel. Eum accusamus consectetur
+                                                molestiae incidunt. Dolorum neque
+                                                eveniet nemo,
+                                                officia dolor magnam ipsa, praesentium id labore corporis quas suscipit
+                                                sed! Tempore impedit velit
+                                                quo ipsam aperiam
+                                                suscipit blanditiis cumque magni perspiciatis, harum obcaecati corrupti
+                                                ex, autem molestiae rem
+                                                explicabo, in maxime
+                                                iusto repellat expedita nisi? Facere fuga ea commodi quia magni pariatur
+                                                esse! Asperiores voluptate,
+                                                tenetur perferendis
+                                                minus laboriosam libero molestias dolore officia. Debitis repellat
+                                                numquam accusantium. Tenetur?
+                                                <span class="read-more">Read Less</span></span>
+                                        </p>
+                                        <p class="hastags d-flex flex-wrap">
+                                            <a href="#">#home</a>
+                                            <a href="#">#beach</a>
+                                            <a href="#">#office</a>
+                                        </p>
+                                    </div>
+                                    <div class="actions d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-heart'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-comment-detail'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </div>
+                                        </div>
+                                        <div class="likes d-flex align-items-center gap-1">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-card card mx-0 mt-0 mb-3">
+                                <div class="card-body p-0">
+                                    <div class="img-container">
+                                        <div
+                                            class=" profile-container d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="/assets/images/profile.png" class="person-img" alt="">
+                                                <div class="content">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <h3 class="name">
+                                                            Lisa Targaryen
+                                                        </h3>
+                                                        <button class="btn btn-primary">
+                                                            Follow
+                                                        </button>
+                                                    </div>
+                                                    <p>
+                                                        <span>
+                                                            Date : 17-11-2025
+                                                        </span>
+                                                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="2" cy="2" r="2" fill="white"
+                                                                fill-opacity="0.79" />
+                                                        </svg>
+                                                        <span>
+                                                            Time : 10:00 AM
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <button class="btn icon-btn">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                        <img src="/assets/images/event.webp" class="post-img" alt="">
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-heading">
+                                            Post Title
+                                        </h3>
+                                        <p class="post-para">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nam
+                                                voluptates maxime impedit
+                                                maiores unde iste voluptas error fugiat molestiae, quaerat delectus
+                                                suscipit dignissimos?
+                                                Perspiciatis possimus a rerum quidem cupiditate laborum alias asperiores
+                                                optio! Perferendis
+                                                praesentium rem id assumenda, sunt, fuga ullam velit numquam quia
+                                                aliquam dicta officiis aperiam
+                                                saepe et temporibus? Vero id dolorum minus voluptate, possimus labore
+                                                veritatis alias natus
+                                                repellendus totam animi quas porro quam iste necessitatibus placeat
+                                                assumenda adipisci dolores
+                                                doloribus sequi ipsum repudiandae perspiciatis? Vel perspiciatis sed
+                                                dolorum voluptate ullam
+                                                temporibus eos, unde deserunt, dicta quis ad expedita magni quia, beatae
+                                                officiis! Corporis quam
+                                                provident doloremque ea suscipit eius, officiis dicta vitae magni
+                                                voluptatibus obcaecati nisi sint
+                                                nam in dolor accusantium iste repellat animi facere ipsam. </span>
+                                            <span class="read-more">Read More</span>
+                                            <span class="d-none">Veniam quas exercitationem nobis asperiores impedit
+                                                deserunt a fugit, sed hic, sint
+                                                necessitatibus magnam voluptas
+                                                aliquid quo. Iste, tempora voluptatibus quasi ducimus molestias tempore
+                                                reiciendis iusto
+                                                perspiciatis minima commodi,
+                                                praesentium sit dolores laboriosam, maxime eligendi dolore quisquam
+                                                nulla quidem quam reprehenderit
+                                                dolor officia cum?
+                                                Consequatur fuga veniam id necessitatibus soluta voluptas autem, facilis
+                                                beatae! Temporibus,
+                                                placeat. Illum, velit
+                                                accusantium? Tempore odit magni quas at modi repellat perferendis,
+                                                deserunt tempora quasi dolore
+                                                voluptatem itaque
+                                                corrupti fugit neque esse odio autem architecto adipisci dignissimos
+                                                sunt libero facere ullam ipsa
+                                                cum! Ratione sint
+                                                unde magnam, et quod, blanditiis eveniet, laborum libero animi
+                                                doloremque vitae nesciunt incidunt
+                                                cupiditate provident
+                                                dolorem! Obcaecati ex suscipit quis vel. Eum accusamus consectetur
+                                                molestiae incidunt. Dolorum neque
+                                                eveniet nemo,
+                                                officia dolor magnam ipsa, praesentium id labore corporis quas suscipit
+                                                sed! Tempore impedit velit
+                                                quo ipsam aperiam
+                                                suscipit blanditiis cumque magni perspiciatis, harum obcaecati corrupti
+                                                ex, autem molestiae rem
+                                                explicabo, in maxime
+                                                iusto repellat expedita nisi? Facere fuga ea commodi quia magni pariatur
+                                                esse! Asperiores voluptate,
+                                                tenetur perferendis
+                                                minus laboriosam libero molestias dolore officia. Debitis repellat
+                                                numquam accusantium. Tenetur?
+                                                <span class="read-more">Read Less</span></span>
+                                        </p>
+                                        <p class="hastags d-flex flex-wrap">
+                                            <a href="#">#home</a>
+                                            <a href="#">#beach</a>
+                                            <a href="#">#office</a>
+                                        </p>
+                                    </div>
+                                    <div class="actions d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-heart'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-comment-detail'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </div>
+                                        </div>
+                                        <div class="likes d-flex align-items-center gap-1">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-card card mx-0 mt-0 mb-3">
+                                <div class="card-body p-0">
+                                    <div class="img-container">
+                                        <div
+                                            class=" profile-container d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="/assets/images/profile.png" class="person-img" alt="">
+                                                <div class="content">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <h3 class="name">
+                                                            Lisa Targaryen
+                                                        </h3>
+                                                        <button class="btn btn-primary">
+                                                            Follow
+                                                        </button>
+                                                    </div>
+                                                    <p>
+                                                        <span>
+                                                            Date : 17-11-2025
+                                                        </span>
+                                                        <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="2" cy="2" r="2" fill="white"
+                                                                fill-opacity="0.79" />
+                                                        </svg>
+                                                        <span>
+                                                            Time : 10:00 AM
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <button class="btn icon-btn">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                        <img src="/assets/images/event.webp" class="post-img" alt="">
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-heading">
+                                            Post Title
+                                        </h3>
+                                        <p class="post-para">
+                                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nam
+                                                voluptates maxime impedit
+                                                maiores unde iste voluptas error fugiat molestiae, quaerat delectus
+                                                suscipit dignissimos?
+                                                Perspiciatis possimus a rerum quidem cupiditate laborum alias asperiores
+                                                optio! Perferendis
+                                                praesentium rem id assumenda, sunt, fuga ullam velit numquam quia
+                                                aliquam dicta officiis aperiam
+                                                saepe et temporibus? Vero id dolorum minus voluptate, possimus labore
+                                                veritatis alias natus
+                                                repellendus totam animi quas porro quam iste necessitatibus placeat
+                                                assumenda adipisci dolores
+                                                doloribus sequi ipsum repudiandae perspiciatis? Vel perspiciatis sed
+                                                dolorum voluptate ullam
+                                                temporibus eos, unde deserunt, dicta quis ad expedita magni quia, beatae
+                                                officiis! Corporis quam
+                                                provident doloremque ea suscipit eius, officiis dicta vitae magni
+                                                voluptatibus obcaecati nisi sint
+                                                nam in dolor accusantium iste repellat animi facere ipsam. </span>
+                                            <span class="read-more">Read More</span>
+                                            <span class="d-none">Veniam quas exercitationem nobis asperiores impedit
+                                                deserunt a fugit, sed hic, sint
+                                                necessitatibus magnam voluptas
+                                                aliquid quo. Iste, tempora voluptatibus quasi ducimus molestias tempore
+                                                reiciendis iusto
+                                                perspiciatis minima commodi,
+                                                praesentium sit dolores laboriosam, maxime eligendi dolore quisquam
+                                                nulla quidem quam reprehenderit
+                                                dolor officia cum?
+                                                Consequatur fuga veniam id necessitatibus soluta voluptas autem, facilis
+                                                beatae! Temporibus,
+                                                placeat. Illum, velit
+                                                accusantium? Tempore odit magni quas at modi repellat perferendis,
+                                                deserunt tempora quasi dolore
+                                                voluptatem itaque
+                                                corrupti fugit neque esse odio autem architecto adipisci dignissimos
+                                                sunt libero facere ullam ipsa
+                                                cum! Ratione sint
+                                                unde magnam, et quod, blanditiis eveniet, laborum libero animi
+                                                doloremque vitae nesciunt incidunt
+                                                cupiditate provident
+                                                dolorem! Obcaecati ex suscipit quis vel. Eum accusamus consectetur
+                                                molestiae incidunt. Dolorum neque
+                                                eveniet nemo,
+                                                officia dolor magnam ipsa, praesentium id labore corporis quas suscipit
+                                                sed! Tempore impedit velit
+                                                quo ipsam aperiam
+                                                suscipit blanditiis cumque magni perspiciatis, harum obcaecati corrupti
+                                                ex, autem molestiae rem
+                                                explicabo, in maxime
+                                                iusto repellat expedita nisi? Facere fuga ea commodi quia magni pariatur
+                                                esse! Asperiores voluptate,
+                                                tenetur perferendis
+                                                minus laboriosam libero molestias dolore officia. Debitis repellat
+                                                numquam accusantium. Tenetur?
+                                                <span class="read-more">Read Less</span></span>
+                                        </p>
+                                        <p class="hastags d-flex flex-wrap">
+                                            <a href="#">#home</a>
+                                            <a href="#">#beach</a>
+                                            <a href="#">#office</a>
+                                        </p>
+                                    </div>
+                                    <div class="actions d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-heart'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class='bx bx-comment-detail'></i> <span>1k</span>
+                                            </div>
+                                            <div class="likes d-flex align-items-center gap-1">
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </div>
+                                        </div>
+                                        <div class="likes d-flex align-items-center gap-1">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="jobs">
+
+                            <div class="search-filters mb-3">
+                                <div class="d-flex align-items-center justify-content-between mob-search-filter">
+                                    <h5 class="label">Jobs</h5>
+                                    <div class="d-flex align-items-center gap-2 searchs">
+                                        <div class="form-control d-flex align-items-center gap-2">
+                                            <i class='bx bx-search'></i>
+                                            <input type="search" placeholder="Search..." class="w-100">
+                                            <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M19.25 9.537H6.895M2.534 9.537H0.75M2.534 9.537C2.534 8.95883 2.76368 8.40434 3.17251 7.99551C3.58134 7.58668 4.13583 7.357 4.714 7.357C5.29217 7.357 5.84666 7.58668 6.25549 7.99551C6.66432 8.40434 6.894 8.95883 6.894 9.537C6.894 10.1152 6.66432 10.6697 6.25549 11.0785C5.84666 11.4873 5.29217 11.717 4.714 11.717C4.13583 11.717 3.58134 11.4873 3.17251 11.0785C2.76368 10.6697 2.534 10.1152 2.534 9.537ZM19.25 16.144H13.502M13.502 16.144C13.502 16.7223 13.2718 17.2774 12.8628 17.6863C12.4539 18.0953 11.8993 18.325 11.321 18.325C10.7428 18.325 10.1883 18.0943 9.77951 17.6855C9.37068 17.2767 9.141 16.7222 9.141 16.144M13.502 16.144C13.502 15.5657 13.2718 15.0116 12.8628 14.6027C12.4539 14.1937 11.8993 13.964 11.321 13.964C10.7428 13.964 10.1883 14.1937 9.77951 14.6025C9.37068 15.0113 9.141 15.5658 9.141 16.144M9.141 16.144H0.75M19.25 2.93H16.145M11.784 2.93H0.75M11.784 2.93C11.784 2.35183 12.0137 1.79734 12.4225 1.38851C12.8313 0.979678 13.3858 0.75 13.964 0.75C14.2503 0.75 14.5338 0.806387 14.7983 0.915943C15.0627 1.0255 15.3031 1.18608 15.5055 1.38851C15.7079 1.59094 15.8685 1.83126 15.9781 2.09575C16.0876 2.36024 16.144 2.64372 16.144 2.93C16.144 3.21628 16.0876 3.49976 15.9781 3.76425C15.8685 4.02874 15.7079 4.26906 15.5055 4.47149C15.3031 4.67392 15.0627 4.8345 14.7983 4.94406C14.5338 5.05361 14.2503 5.11 13.964 5.11C13.3858 5.11 12.8313 4.88032 12.4225 4.47149C12.0137 4.06266 11.784 3.50817 11.784 2.93Z"
+                                                        stroke="#FF7A00" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <button class="btn btn-primary">
+                                            Search
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card mb-4 ">
+                                <div class="card-body p-0">
+                                    <div class="px-3 pt-3">
+
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores tempore, quam
+                                                        obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores tempore, quam
+                                                        obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores
+                                                        tempore, quam obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores
+                                                        tempore, quam obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores
+                                                        tempore, quam obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <h3 class="company-name">
+                                                                    Technical Assistance Lead
+                                                                </h3>
+                                                            </div>
+                                                            <i class="fa-regular fa-bookmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-3">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Dolore inventore libero dolores
+                                                        tempore, quam obcaecati.</p>
+                                                    <p class="time">
+                                                        1 day ago
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center job-see justify-content-center py-3 gap-2">
+                                        <a href="" class="view-all">See All Jobs &nbsp; <i
+                                                class="fa-solid fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="applicants">
+                            <div class="card mb-4 ">
+                                <div class="card-body p-0">
+                                    <div class="px-3 pt-3">
+
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-4 col-md-6 col-12">
+                                                <div class="job_container">
+                                                    <div class="top-part mb-3">
+
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="company-profile">
+                                                                    <img src="/assets/images/logo.svg" alt="">
+                                                                </div>
+                                                                <div>
+
+                                                                    <h3 class="company-name mb-1">
+                                                                        James
+                                                                    </h3>
+                                                                    <p class="para mb-0">
+                                                                        james@gmail.com
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <p class="para mb-2"><strong>Job Designation :</strong> Sr.
+                                                        Developer</p>
+                                                    <p class="para mb-3"><strong>Experience :</strong> 2yrs</p>
+                                                    <div class="btn-group d-flex align-items-center flex-column gap-3">
+                                                        <button
+                                                            class="btn btn-blue w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-regular fa-eye"></i> View Resume
+                                                        </button>
+                                                        <button
+                                                            class="btn btn-danger w-100 d-flex align-items-center justify-content-center gap-2">
+                                                            <i class="fa-solid fa-trash-can"></i> Resume
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center job-see justify-content-center py-3 gap-2">
+                                        <a href="" class="view-all">See All Jobs &nbsp; <i
+                                                class="fa-solid fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xl-4 ps-0" id="mob-col-none">
+
+                    <div class="card new-card mb-4">
+                        <div class="card-body p-0">
+                            <h3 class="headign-title">
+                                HMETV News
+                            </h3>
+                            <div class="px-3">
+
+                                <h5 class="top-title">
+                                    Top stories
+                                </h5>
+                                <div class="d-flex align-items-center justify-content-between contents">
+                                    <div class="">
+                                        <h3>India, EU sign historic deal</h3>
+                                        <p>22m ago • 147,348 readers</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between contents">
+                                    <div class="">
+                                        <h3>India, EU sign historic deal</h3>
+                                        <p>22m ago • 147,348 readers</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between contents">
+                                    <div class="">
+                                        <h3>India, EU sign historic deal</h3>
+                                        <p>22m ago • 147,348 readers</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between contents">
+                                    <div class="">
+                                        <h3>India, EU sign historic deal</h3>
+                                        <p>22m ago • 147,348 readers</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between contents">
+                                    <div class="">
+                                        <h3>India, EU sign historic deal</h3>
+                                        <p>22m ago • 147,348 readers</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <button class="btn btn-secondary">See More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="suggestion">
+                                Suggested for you
+                            </h3>
+                            <a href="" class="view-all">View All</a>
+                        </div>
+                        <div
+                            class=" d-flex align-items-center position-relative suggestion-card  justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+
+                                <div class="user">
+                                    <img src="/assets/images/profile-user.png" alt="">
+                                </div>
+                                <div class="contents">
+                                    <h3>James</h3>
+                                    <p>james@hme</p>
+                                </div>
+                            </div>
+                            <button class="follow">Follow</button>
+                        </div>
+                        <div
+                            class=" d-flex align-items-center position-relative suggestion-card  justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+
+                                <div class="user">
+                                    <img src="/assets/images/profile-user.png" alt="">
+                                </div>
+                                <div class="contents">
+                                    <h3>James</h3>
+                                    <p>james@hme</p>
+                                </div>
+                            </div>
+                            <button class="follow">Follow</button>
+                        </div>
+                        <div
+                            class=" d-flex align-items-center position-relative suggestion-card  justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+
+                                <div class="user">
+                                    <img src="/assets/images/profile-user.png" alt="">
+                                </div>
+                                <div class="contents">
+                                    <h3>James</h3>
+                                    <p>james@hme</p>
+                                </div>
+                            </div>
+                            <button class="follow">Follow</button>
+                        </div>
+                        <div
+                            class=" d-flex align-items-center position-relative suggestion-card  justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+
+                                <div class="user">
+                                    <img src="/assets/images/profile-user.png" alt="">
+                                </div>
+                                <div class="contents">
+                                    <h3>James</h3>
+                                    <p>james@hme</p>
+                                </div>
+                            </div>
+                            <button class="follow">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>
