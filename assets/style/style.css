@@ -256,10 +256,10 @@ body.dashboard-page{
     background-color: var(--card-bg);
 }
 .header-section .header-contant{
-    margin: 20px;
+    margin: 0px 0px 20px;
     padding: 16px 20px;
-    background-color: var(--primary-orange);
-    border-radius: 8px;
+    background-color: var(--secondary-blue);
+    border-radius: 0px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
 }
 .header-section .header-contant  .logo-container{
@@ -294,20 +294,25 @@ body.dashboard-page{
 .header-section .header-contant nav.nav ul li a:focus,
 .header-section .header-contant nav.nav ul li a:active{
     background-color: var(--white);
-color: var(--primary-orange);
+color: var(--secondary-blue);
     font-weight: 600;
 }
 .header-section .header-contant nav.nav ul li a:hover svg path,
 .header-section .header-contant nav.nav ul li a:focus svg path,
 .header-section .header-contant nav.nav ul li a:active svg path{
- fill:var(--primary-orange);
+ fill:var(--secondary-blue);
+ stroke: var(--white);
 
 }
 
 .header-section .header-contant nav.nav ul li a.active-item{
-background-color: var(--white);
-color: var(--primary-orange);
+    background-color: var(--white);
+color: var(--secondary-blue);
     font-weight: 600;
+}
+.header-section .header-contant nav.nav ul li a.active-item svg path{
+     fill:var(--secondary-blue);
+      stroke: var(--white);
 }
 
 .header-section .header-contant  .search-btn-header{
@@ -319,7 +324,7 @@ color: var(--primary-orange);
     
 }
 .header-section .header-contant  .search-btn-header i{
-color: var(--primary-orange);
+color: var(--secondary-blue);
 font-size: 20px;
 }
 
@@ -702,7 +707,7 @@ margin-bottom: 0px;
 }
 .searchs{
     width: 100%;
-    max-width: 450px;
+   max-width: 395px;
 }
 
 .profile-card{
@@ -1199,12 +1204,13 @@ color: var(--white);
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    display: none;
 }
 .drawer-popup{
     height: 0px;
     /* height: 0px; */
     /* opacity: 0; */
-    display: none;
+    display: block;
     transition: all 0.5s ease-in-out;
 }
 .drawer-popup.collapsed{
@@ -1261,6 +1267,10 @@ color: var(--white);
 .custom-tabs li button{
 margin-right: 0px !important; 
 }
+.dropdown-container{
+  top: 66px !important;
+    right: calc(100% / 34.2) !important;
+}
 }
 @media screen and (max-width: 767px) {
     #applicants .card .col-xl-4.col-md-6.col-12,
@@ -1278,7 +1288,7 @@ body{
 body header{
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 9;
 }
 .profile-page .social-media img{
  width: 35px;
@@ -1345,4 +1355,73 @@ width: 33px;
 }
 .info-content .contents .para{
 color: var(--paragraph-color);
+}
+main .container{
+
+}
+.dropdown-container{
+position: fixed;
+    width: 100%;
+    max-width: 300px;
+    top: 80px;
+        right: calc(100% / 6.2);
+    background-color: var(--card-bg);
+    padding: 16px;
+    border: 1px solid var(--primary-orange);
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    z-index: 0;
+    min-height: 0%;
+    height: 0%;
+    overflow-y: auto;
+        /* display: none; */
+}
+.dropdown-container:hover{
+    opacity: 1;
+      z-index: 9;
+}
+/* .dropdown-container::after{
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 18px;
+    height: 18px;
+    z-index: 9;
+    background: #ffffff;
+    rotate: 45deg;
+    right: 37px;
+    border-top: 1px solid var(--primary-orange);;
+    border-left: 1px solid var(--primary-orange);;
+} */
+.dropdown:hover .dropdown-container{
+     min-height: 0%;
+    height: 80%;
+        opacity: 1;
+      z-index: 9;
+}
+
+body::-webkit-scrollbar,
+.dropdown-container::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 4px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track,
+.dropdown-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb,.dropdown-container::-webkit-scrollbar-thumb {
+  background: var(--secondary-blue); 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover,
+.dropdown-container::-webkit-scrollbar-thumb:hover {
+  background:var(--secondary-blue); 
 }
